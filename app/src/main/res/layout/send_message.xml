@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.software.jxufe.securitymessage.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="请输入号码"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:hint="请输入信息"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />" />
+
+    <Button
+        android:id="@+id/encryptSend"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="加密发送"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/pwd"
+        app:layout_constraintTop_toBottomOf="@+id/message_send" />
+
+    <Button
+        android:id="@+id/message_send"
+        android:layout_width="88dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="348dp"
+        android:text="发   送"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/msg"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <ImageButton
+        android:id="@+id/contact"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/contact" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="请输入密钥"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <!--<LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c9c9c3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="451dp">
+
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="324dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入密钥"
+            android:inputType="textPassword"
+            android:maxLines="2" />
+
+        <Button
+            android:id="@+id/encryp_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密发送" />
+
+    </LinearLayout>-->
+
+</android.support.constraint.ConstraintLayout>
